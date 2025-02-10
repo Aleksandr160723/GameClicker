@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер Игра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Навигационные кнопки -->
+        <div class="nav-buttons">
+            <button class="nav-btn" id="btnMain">Главная</button>
+            <button class="nav-btn" id="btnPage1">Страница 1</button>
+            <button class="nav-btn" id="btnPage2">Страница 2</button>
+            <button class="nav-btn" id="btnPage3">Страница 3</button>
+            <button class="nav-btn" id="btnPage4">Страница 4</button>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="balance-container">
+            <span class="balance-label">Баланс:</span>
+            <span class="balance">$ <span id="balance">0,00</span></span>
+        </div>
+        
+        <div class="stats">
+            <div class="level-box">LEVEL: <span id="level">1</span></div>
+            <div class="click-box">CLICK: <span id="clickValue">1.00</span></div>
+        </div>
+        
+        <!-- Страницы -->
+        <div class="page active" id="mainPage">
+            <div class="click-area" id="clickArea">Кликай, кликай, кликай</div>
+        </div>
+        
+        <div class="page" id="page1">
+            <div class="page-content">Содержимое страницы 1</div>
+        </div>
+        
+        <div class="page" id="page2">
+            <div class="page-content">Содержимое страницы 2</div>
+        </div>
+        
+        <div class="page" id="page3">
+            <div class="page-content">Содержимое страницы 3</div>
+        </div>
+        
+        <div class="page" id="page4">
+            <div class="page-content">Содержимое страницы 4</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

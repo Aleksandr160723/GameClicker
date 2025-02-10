@@ -1,0 +1,202 @@
+/* Навигационные кнопки */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    padding: 8px 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    background: rgba(76, 175, 80, 0.3);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: #4CAF50;
+}
+
+.nav-btn.active {
+    background: #4CAF50;
+    cursor: default;
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Страницы */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-content {
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.balance {
+    text-align: left; 
+    width: 2000px;
+    display: block; /* Чтобы `text-align` работал */
+    text-align: left; 
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 75px;
+    transform: translateX(-70px); /* Сдвиг влево */ 
+}
+
+/* Стили для рамок LEVEL и CLICK */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+        gradient-button {
+        background: linear-gradient(135deg, #d32f2f, orange, yellow);
+        border: none;
+        border-radius: 20px;
+        color: white;
+        padding: 20px 40px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        transition: background 0.3s;
+        display: inline-block;
+    }
+
+}
+
+.level-box, .click-box {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 13px 12px; /* Внутренние отступы */
+    border-radius: 70px; /* Закругление углов */
+    background: linear-gradient(135deg, #9612b8, rgb(200, 191, 228), rgb(202, 67, 157), rgb(216, 42, 158), rgb(98, 39, 126));
+}
+
+.click-area {
+    height: 180px; /* Увеличение высоты */
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative; /* Или absolute */
+    transform: translateX(-20px); /* Сдвиг влево */
+    width: 33%;
+    padding: 120px;
+    background-color: #e5d2e9;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.click-area:active {
+    background-color: #e0cdec;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4f34ca, rgb(97, 32, 141), rgb(0, 0, 0), rgb(92, 62, 199), rgb(69, 29, 214));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff, rgb(87, 19, 165), rgb(80, 61, 23), rgb(2, 1, 0) );
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(226, 85, 191, 0.884);
+    width: 300px;
+}
+
+.balance-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.balance-label {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.balance {
+    text-align: left;
+    width: 2000px;
+    display: block; /* Чтобы `text-align` работал */
+    text-align: left; 
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 75px;
+    transform: translateX(-70px); /* Сдвиг влево */ 
+}
+
+/* Стили для рамок LEVEL и CLICK */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+        gradient-button {
+        background: linear-gradient(135deg, #d32f2f, orange, yellow);
+        border: none;
+        border-radius: 20px;
+        color: white;
+        padding: 20px 40px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        transition: background 0.3s;
+        display: inline-block;
+    }
+
+}
+
+.level-box, .click-box {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 13px 12px; /* Внутренние отступы */
+    border-radius: 70px; /* Закругление углов */
+    background: linear-gradient(135deg, #9612b8, rgb(200, 191, 228), rgb(202, 67, 157), rgb(216, 42, 158), rgb(98, 39, 126));
+}
+
+.click-area {
+    height: 180px; /* Увеличение высоты */
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative; /* Или absolute */
+    transform: translateX(-20px); /* Сдвиг влево */
+    width: 33%;
+    padding: 120px;
+    background-color: #e5d2e9;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.click-area:active {
+    background-color: #e0cdec;
+}
